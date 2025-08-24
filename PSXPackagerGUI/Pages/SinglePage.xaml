@@ -16,6 +16,7 @@
         <converters:IsEmptyBrushConverter x:Key="IsEmptyBrushConverter"></converters:IsEmptyBrushConverter>
         <converters:NotConverter x:Key="NotConverter"></converters:NotConverter>
         <converters:IsoInformationConverter x:Key="IsoInformationConverter"></converters:IsoInformationConverter>
+        <converters:NullToVisibilityConverter x:Key="NullToVisibilityConverter"></converters:NullToVisibilityConverter>
         <ContextMenu x:Key="DiscButtonContextMenu">
             <MenuItem Header="Load ISO" x:Name="LoadISO" Click="LoadISO_OnClick" />
             <MenuItem Header="Save As..." x:Name="SaveImage" Click="SaveImage_OnClick" />
@@ -130,6 +131,209 @@
                             <controls:ResourceControl Resource="{Binding Pic1}" Grid.Row="3" Text="PIC1" Drop="Pic1_OnDrop" More="Resource_OnMore" Remove="Resource_OnRemove"></controls:ResourceControl>
                             <controls:ResourceControl Resource="{Binding Snd0}" Grid.Row="4" Text="SND0" More="Resource_OnMore" Remove="Resource_OnRemove"></controls:ResourceControl>
 
+                        </Grid>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="ScreenScraper">
+                    <ScrollViewer Margin="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            
+                            <!-- Credentials Section -->
+                            <GroupBox Header="ScreenScraper Credentials" Grid.Row="0" Margin="0,0,0,10">
+                                <StackPanel>
+                                    <Grid Margin="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="120"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition Height="30"/>
+                                        </Grid.RowDefinitions>
+                                        
+                                        <Label Grid.Row="0" Grid.Column="0" Content="Developer ID:" VerticalAlignment="Center"/>
+                                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding ScreenScraperModel.DevId}" Margin="5,2"/>
+                                        
+                                        <Label Grid.Row="1" Grid.Column="0" Content="Dev Password:" VerticalAlignment="Center"/>
+                                        <PasswordBox Grid.Row="1" Grid.Column="1" x:Name="DevPasswordBox" Margin="5,2" PasswordChanged="DevPasswordBox_OnPasswordChanged"/>
+                                        
+                                        <Label Grid.Row="2" Grid.Column="0" Content="Username:" VerticalAlignment="Center"/>
+                                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding ScreenScraperModel.Username}" Margin="5,2"/>
+                                        
+                                        <Label Grid.Row="3" Grid.Column="0" Content="Password:" VerticalAlignment="Center"/>
+                                        <PasswordBox Grid.Row="3" Grid.Column="1" x:Name="UserPasswordBox" Margin="5,2" PasswordChanged="UserPasswordBox_OnPasswordChanged"/>
+                                    </Grid>
+                                    <Button Content="Save Credentials" 
+                                            Command="{Binding ScreenScraperModel.SaveCredentialsCommand}" 
+                                            Margin="5,10,5,0" Height="30" HorizontalAlignment="Right" Width="120"/>
+                                </StackPanel>
+                            </GroupBox>
+                            
+                            <!-- Search Section -->
+                            <GroupBox Header="Game Search" Grid.Row="1" Margin="0,0,0,10">
+                                <Grid Margin="5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <Button Grid.Row="0" Content="Search Game Info" 
+                                            Command="{Binding ScreenScraperModel.SearchCommand}" 
+                                            IsEnabled="{Binding ScreenScraperModel.IsSearching, Converter={StaticResource NotConverter}}"
+                                            Margin="0,0,0,5" Height="30"/>
+                                    
+                                    <TextBlock Grid.Row="1" Text="{Binding ScreenScraperModel.SearchStatus}" 
+                                               Foreground="Blue" FontStyle="Italic"/>
+                                </Grid>
+                            </GroupBox>
+                            
+                            <!-- Game Info Section -->
+                            <GroupBox Header="Game Information" Grid.Row="2" Margin="0,0,0,10" 
+                                      Visibility="{Binding ScreenScraperModel.CurrentGameInfo, Converter={StaticResource NullToVisibilityConverter}}">
+                                <Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <Label Grid.Row="0" Grid.Column="0" Content="Name:" FontWeight="Bold"/>
+                                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Name}" 
+                                               TextWrapping="Wrap" VerticalAlignment="Center"/>
+                                    
+                                    <Label Grid.Row="1" Grid.Column="0" Content="Publisher:" FontWeight="Bold"/>
+                                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Publisher}" 
+                                               VerticalAlignment="Center"/>
+                                    
+                                    <Label Grid.Row="2" Grid.Column="0" Content="Developer:" FontWeight="Bold"/>
+                                    <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Developer}" 
+                                               VerticalAlignment="Center"/>
+                                    
+                                    <Label Grid.Row="3" Grid.Column="0" Content="Release Date:" FontWeight="Bold"/>
+                                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.ReleaseDate}" 
+                                               VerticalAlignment="Center"/>
+                                    
+                                    <Label Grid.Row="4" Grid.Column="0" Content="Players:" FontWeight="Bold"/>
+                                    <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Players}" 
+                                               VerticalAlignment="Center"/>
+                                    
+                                    <Label Grid.Row="5" Grid.Column="0" Content="Rating:" FontWeight="Bold"/>
+                                    <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Rating}" 
+                                               VerticalAlignment="Center"/>
+                                    
+                                    <Label Grid.Row="6" Grid.Column="0" Content="Synopsis:" FontWeight="Bold" VerticalAlignment="Top"/>
+                                    <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Synopsis}" 
+                                               TextWrapping="Wrap" MaxHeight="100" VerticalAlignment="Top"/>
+                                </Grid>
+                            </GroupBox>
+                            
+                            <!-- Media Section -->
+                            <GroupBox Header="Game Media" Grid.Row="3" 
+                                      Visibility="{Binding ScreenScraperModel.CurrentGameInfo, Converter={StaticResource NullToVisibilityConverter}}">
+                                <ScrollViewer>
+                                    <StackPanel Margin="5">
+                                        <Grid Margin="0,0,0,10" Visibility="{Binding ScreenScraperModel.CurrentGameInfo.Media.Screenshot, Converter={StaticResource NullToVisibilityConverter}}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="80"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Screenshot:" FontWeight="Bold"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Media.Screenshot}" 
+                                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+                                            <Button Grid.Column="2" Content="Download" 
+                                                    Command="{Binding ScreenScraperModel.DownloadImageCommand}" 
+                                                    CommandParameter="{Binding ScreenScraperModel.CurrentGameInfo.Media.Screenshot}"/>
+                                        </Grid>
+                                        
+                                        <Grid Margin="0,0,0,10" Visibility="{Binding ScreenScraperModel.CurrentGameInfo.Media.Box2dUs, Converter={StaticResource NullToVisibilityConverter}}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="80"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Box Art (US):" FontWeight="Bold"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Media.Box2dUs}" 
+                                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+                                            <Button Grid.Column="2" Content="Download" 
+                                                    Command="{Binding ScreenScraperModel.DownloadImageCommand}" 
+                                                    CommandParameter="{Binding ScreenScraperModel.CurrentGameInfo.Media.Box2dUs}"/>
+                                        </Grid>
+                                        
+                                        <Grid Margin="0,0,0,10" Visibility="{Binding ScreenScraperModel.CurrentGameInfo.Media.Box2dJp, Converter={StaticResource NullToVisibilityConverter}}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="80"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Box Art (JP):" FontWeight="Bold"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Media.Box2dJp}" 
+                                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+                                            <Button Grid.Column="2" Content="Download" 
+                                                    Command="{Binding ScreenScraperModel.DownloadImageCommand}" 
+                                                    CommandParameter="{Binding ScreenScraperModel.CurrentGameInfo.Media.Box2dJp}"/>
+                                        </Grid>
+                                        
+                                        <Grid Margin="0,0,0,10" Visibility="{Binding ScreenScraperModel.CurrentGameInfo.Media.WheelUs, Converter={StaticResource NullToVisibilityConverter}}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="80"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Wheel (US):" FontWeight="Bold"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Media.WheelUs}" 
+                                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+                                            <Button Grid.Column="2" Content="Download" 
+                                                    Command="{Binding ScreenScraperModel.DownloadImageCommand}" 
+                                                    CommandParameter="{Binding ScreenScraperModel.CurrentGameInfo.Media.WheelUs}"/>
+                                        </Grid>
+                                        
+                                        <Grid Margin="0,0,0,10" Visibility="{Binding ScreenScraperModel.CurrentGameInfo.Media.WheelJp, Converter={StaticResource NullToVisibilityConverter}}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="80"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Wheel (JP):" FontWeight="Bold"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Media.WheelJp}" 
+                                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+                                            <Button Grid.Column="2" Content="Download" 
+                                                    Command="{Binding ScreenScraperModel.DownloadImageCommand}" 
+                                                    CommandParameter="{Binding ScreenScraperModel.CurrentGameInfo.Media.WheelJp}"/>
+                                        </Grid>
+                                        
+                                        <Grid Margin="0,0,0,10" Visibility="{Binding ScreenScraperModel.CurrentGameInfo.Media.Icon0Url, Converter={StaticResource NullToVisibilityConverter}}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="80"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="ICON0:" FontWeight="Bold" Foreground="Green"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding ScreenScraperModel.CurrentGameInfo.Media.Icon0Url}" 
+                                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+                                            <Button Grid.Column="2" Content="Set ICON0" 
+                                                    Command="{Binding ScreenScraperModel.DownloadIcon0Command}" 
+                                                    Background="LightGreen"/>
+                                        </Grid>
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </GroupBox>
                         </Grid>
                     </ScrollViewer>
                 </TabItem>

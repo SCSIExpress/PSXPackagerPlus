@@ -955,5 +955,23 @@ namespace PSXPackagerGUI.Pages
         {
             Save(true);
         }
+
+        private void DevPasswordBox_OnPasswordChanged(object sender, RoutedEventArgs e)
+        {
+            var passwordBox = sender as PasswordBox;
+            if (Model?.ScreenScraperModel != null)
+            {
+                Model.ScreenScraperModel.DevPassword = passwordBox.Password;
+            }
+        }
+
+        private void UserPasswordBox_OnPasswordChanged(object sender, RoutedEventArgs e)
+        {
+            var passwordBox = sender as PasswordBox;
+            if (Model?.ScreenScraperModel != null)
+            {
+                Model.ScreenScraperModel.Password = passwordBox.Password;
+            }
+        }
     }
 }

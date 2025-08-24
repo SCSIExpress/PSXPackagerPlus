@@ -22,6 +22,7 @@ namespace PSXPackagerGUI.Models
         private bool _generateResourceFolders;
         private bool _extractResources;
         private bool? _selectAll;
+        private bool _useScreenScraper;
 
         public BatchModel()
         {
@@ -162,6 +163,12 @@ namespace PSXPackagerGUI.Models
         {
             get => _extractResources;
             set => SetProperty(ref _extractResources, value);
+        }
+
+        public bool UseScreenScraper
+        {
+            get => _useScreenScraper;
+            set => SetProperty(ref _useScreenScraper, value);
         }
 
         public BatchSettingsModel Settings { get; set; }

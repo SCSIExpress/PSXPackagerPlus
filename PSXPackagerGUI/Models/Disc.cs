@@ -12,6 +12,7 @@ namespace PSXPackagerGUI.Models
         private bool _isSaveAsEnabled;
         private bool _isLoadEnabled;
         private ICommand _removeCommand;
+        private string _path;
 
         public int Index { get; set; }
 
@@ -69,6 +70,12 @@ namespace PSXPackagerGUI.Models
         {
             get => _gameId;
             set => SetProperty(ref _gameId, value);
+        }
+
+        public string Path
+        {
+            get => _path;
+            set => SetProperty(ref _path, value);
         }
 
         public string SourceUrl { get; set; }

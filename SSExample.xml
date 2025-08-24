@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+<serveurs>
+	<cpu1>0</cpu1>
+	<cpu2>0</cpu2>
+	<cpu3>0</cpu3>
+	<cpu4>0</cpu4>
+	<threadsmin>3236</threadsmin>
+	<nbscrapeurs>627</nbscrapeurs>
+	<apiacces>1030181</apiacces>
+	<closefornomember>0</closefornomember>
+	<closeforleecher>0</closeforleecher>
+	<maxthreadfornonmember>256</maxthreadfornonmember>
+	<threadfornonmember>43</threadfornonmember>
+	<maxthreadformember>4096</maxthreadformember>
+	<threadformember>170</threadformember>
+</serveurs>
+<ssuser>
+	<id>test</id>
+	<numid>0</numid>
+	<niveau>0</niveau>
+	<contribution>0</contribution>
+	<uploadsysteme>0</uploadsysteme>
+	<uploadinfos>0</uploadinfos>
+	<romasso>0</romasso>
+	<uploadmedia>0</uploadmedia>
+	<propositionok/>
+	<propositionko/>
+	<quotarefu/>
+	<maxthreads>1</maxthreads>
+	<maxdownloadspeed>128</maxdownloadspeed>
+	<requeststoday>0</requeststoday>
+	<requestskotoday>0</requestskotoday>
+	<maxrequestspermin>3072</maxrequestspermin>
+	<maxrequestsperday>10000</maxrequestsperday>
+	<maxrequestskoperday>1000</maxrequestskoperday>
+	<visites>0</visites>
+	<datedernierevisite/>
+	<favregion/>
+</ssuser>
+<jeu id="3" romid="12100" notgame="false">
+	<noms>
+		<nom region="ss">Sonic The Hedgehog 2</nom>
+		<nom region="us">Sonic The Hedgehog 2</nom>
+		<nom region="jp">Sonic The Hedgehog 2</nom>
+		<nom region="eu">Sonic The Hedgehog 2</nom>
+	</noms>
+	<cloneof>0</cloneof>
+	<systeme id="1">Megadrive</systeme>
+	<editeur id="3">SEGA</editeur>
+	<developpeur id="3">SEGA</developpeur>
+	<joueurs>1-2</joueurs>
+	<note>16</note>
+	<topstaff>0</topstaff>
+	<rotation>0</rotation>
+	<synopsis>
+		<synopsis langue="en">Sonic the Hedgehog 2 is a side-scrolling platformer based around speed, and the sequel to Sonic the Hedgehog. Players run through different worlds called "Zones", each with a specific theme. There are two Acts in nearly all of the 10 Zones, and at the end of each Zone's last Act is a machine that Robotnik controls, which you must defeat to progress. Sonic and Tails can collect rings which are scattered throughout all of the levels. When the player collects 100 rings they earn an extra life. The rings also act as protection - if Sonic is hurt when he is carrying rings, they scatter everywhere and he is briefly invincible. If he is hit again when he has no rings, he'll lose a life. If the player reaches a continue point lamppost with 50 or more rings, they'll be able to access the Special Stage. In this stage, you must gather a set amount of rings in a halfpipe-like stage before you reach a checkpoint. Complete all the checkpoints and you'll earn one of the seven Chaos Emeralds. The game also includes the ability to play the game co-op with a friend - at any time, a player can plug in a second controller and take over the AI controlled Tails. Tails has infinite lives and the camera remains focused on Sonic, meaning that Tails will not hinder play. Sonic (and Tails) can now also get speed from a standing start by holding down and repeatedly pressing the jump button for a "Spin Dash". This is useful when stuck near steep slopes or other areas where you need some momentum. The game also features a 2-player versus mode. This mode is a horizontally split-screen race through levels based on three of the zones in the single player game.</synopsis>
+	<classifications>
+		<classification type="SS">6</classification>
+		<classification type="Tectoy">TI</classification>
+		<classification type="CERO">A</classification>
+		<classification type="PEGI">3</classification>
+		<classification type="ESRB">E</classification>
+	</classifications>
+	<dates>
+		<date region="us">1992-11-24</date>
+		<date region="jp">1992-11-21</date>
+		<date region="eu">1992-11-24</date>
+		<date region="br">1992-12-01</date>
+	</dates>
+	<genres>
+			<genre id="7" nomcourt="0101" principale="1" parentid="0" langue="en">Platform</genre>
+			<genre id="7" nomcourt="0101" principale="1" parentid="0" langue="fr">Plateforme</genre>
+			<genre id="7" nomcourt="0101" principale="1" parentid="0" langue="de">Plattform</genre>
+			<genre id="7" nomcourt="0101" principale="1" parentid="0" langue="es">Plataformas</genre>
+			<genre id="7" nomcourt="0101" principale="1" parentid="0" langue="it">Piattaforma</genre>
+			<genre id="7" nomcourt="0101" principale="1" parentid="0" langue="pt">Plataforma</genre>
+	</genres>
+	<modes>
+			<mode id="3602" nomcourt="" principale="0" parentid="0" langue="en">Single-player with 2 controllers</mode>
+			<mode id="3602" nomcourt="" principale="0" parentid="0" langue="fr">Jouable en solo avec 2 joysticks</mode>
+	</modes>
+	<familles>
+			<famille id="4048" nomcourt="" principale="0" parentid="0" langue="fr">Sonic</famille>
+	</familles>
+<actions>
+	<action id="25" langue="en" recalboxtext="sonic_Y|B|A+DOWN=Spin Dash">sonic_BTN-A|BTN-B|BTN-C+DOWN=Spin Dash</action>
+	<action id="25" langue="fr" recalboxtext="sonic_Y|B|A+DOWN=Spin Dash">sonic_BTN-A|BTN-B|BTN-C+DOWN=Spin Dash</action>
+	<action id="27" langue="en" recalboxtext="sonic_LEFT|RIGHT=walk / run">sonic_LEFT|RIGHT=walk / run</action>
+	<action id="27" langue="fr" recalboxtext="sonic_LEFT|RIGHT=marcher / courir">sonic_LEFT|RIGHT=marcher / courir</action>
+	<action id="29" langue="en" recalboxtext="sonic_LEFT|RIGHT+DOWN=Super Sonic Spin Attack (while running)">sonic_LEFT|RIGHT+DOWN=Super Sonic Spin Attack (while running)</action>
+	<action id="29" langue="fr" recalboxtext="sonic_LEFT|RIGHT+DOWN=attaque tournoyante supersonique">sonic_LEFT|RIGHT+DOWN=attaque tournoyante supersonique</action>
+	<action id="31" langue="en" recalboxtext="sonic_Y|B|A=Super Sonic Spin Jump">sonic_BTN-A|BTN-B|BTN-C=Super Sonic Spin Jump</action>
+	<action id="31" langue="fr" recalboxtext="sonic_Y|B|A=saut tournoyante supersonique">sonic_BTN-A|BTN-B|BTN-C=saut tournoyante supersonique</action>
+	<action id="33" langue="en" recalboxtext="sonic_UP=Look up">sonic_UP=Look up</action>
+	<action id="33" langue="fr" recalboxtext="sonic_UP=regarder en haut">sonic_UP=regarder en haut</action>
+	<action id="35" langue="en" recalboxtext="sonic_DOWN=Crouch">sonic_DOWN=Crouch</action>
+	<action id="35" langue="fr" recalboxtext="sonic_DOWN=S'accroupir">sonic_DOWN=S'accroupir</action>
+</actions>
+	<medias>
+		<media parent="jeu" type="sstitle" region="wor" crc="2ffb473e" md5="3ef435cc17b42933e5edb398a0b4f6c1" sha1="9f84fd6bf389b0234270ea4624644d3edd0a3827" size="7784" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=sstitle(wor)</media>
+		<media parent="jeu" type="ss" region="wor" crc="92515fc4" md5="69446a70751afb5e09fe8fdea4d107cb" sha1="80e91feea747a0cb2ae4baf276b265dffa57fb6b" size="12168" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=ss(wor)</media>
+		<media parent="jeu" type="fanart" crc="b95b88b8" md5="77a6d75dad37ed617fd365a5aa9c7aae" sha1="eaa02c7d9a0027560680603bf688e41e9ad88112" size="177519" format="jpg">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=fanart</media>
+		<media parent="jeu" type="video" crc="1cc52e2e" md5="96e66d48430db63780843a1216ff2e40" sha1="7c20b9c70d7fbf109408a3d5784d852e716d42c1" size="19852641" format="mp4">https://neoclone.screenscraper.fr/api2/mediaVideoJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=video</media>
+		<media parent="jeu" type="video-normalized" crc="ac25c321" md5="56b13ffe3840932d1fb7d780104b6a54" sha1="46d88d02e795cf75d8cf651ed5b9cfc7891b830a" size="5487339" format="mp4">https://neoclone.screenscraper.fr/api2/mediaVideoJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=video-normalized</media>
+		<media parent="jeu" type="themehs" crc="bffc7ab8" md5="9b10042049f44e0f09c33e3b049a9485" sha1="fe1d441d56582bfcd6e27d2699cc67ef200673a7" size="2096923" format="zip">https://neoclone.screenscraper.fr/api2/mediaFichierJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=themehs</media>
+		<media parent="jeu" type="screenmarquee" region="wor" crc="c8043bda" md5="52adfedca0a0620910bca860f91bdd45" sha1="358c37cb9d4e3d27ae785e5d81364273081d3f38" size="374374" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=screenmarquee(wor)</media>
+		<media parent="jeu" type="screenmarqueesmall" region="wor" crc="9c7c5a7e" md5="ee20adddc339763c62451ea19c178d2e" sha1="cb7a368df9d9a171c360b50b9439e5387caac061" size="77238" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=screenmarqueesmall(wor)</media>
+		<media parent="jeu" type="steamgrid" crc="c774904c" md5="ce351673385c19092a69660456254cc7" sha1="a82606618a43ddfb34ae7bba225145e595dc1d10" size="30975" format="jpg">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=steamgrid</media>
+		<media parent="jeu" type="wheel-hd" region="jp" crc="d7e26038" md5="0158bbbfbd5d0801ded6e1fbee24026f" sha1="c000514ca6221a3657953e98ad1e3930a85f62fb" size="41757" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=wheel-hd(jp)</media>
+		<media parent="jeu" type="wheel-hd" region="wor" crc="66501b82" md5="bdcdd1344e2435a6d4bca1d2ecb841b3" sha1="21de97861f17b290334a29d8d44d642852f28051" size="90065" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=wheel-hd(wor)</media>
+		<media parent="jeu" type="wheel-carbon" region="jp" crc="74e259f1" md5="e9442806d5cc40440440f87857545747" sha1="11e6f0691d8a2e4741b1db8f8072f77e97f4cd4e" size="136381" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=wheel-carbon(jp)</media>
+		<media parent="jeu" type="wheel-carbon" region="wor" crc="90976bc6" md5="d11f1b74e2fec36627c953fb3a6dc758" sha1="6bf6a9882a68d7b2fa46bb791c75d575e62c46dc" size="172174" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=wheel-carbon(wor)</media>
+		<media parent="jeu" type="wheel-steel" region="jp" crc="8b4f943b" md5="3c426dd27f8b33a6e3709e2d218651b4" sha1="d7ab68e954f744c21310d4198ab4bdc3da57c4a7" size="134046" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=wheel-steel(jp)</media>
+		<media parent="jeu" type="wheel-steel" region="wor" crc="c11a662a" md5="a6200a00d0d424033e3805e9be004d07" sha1="547ec6ae5d15112453f0fe44b8fd536fc541e041" size="168306" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=wheel-steel(wor)</media>
+		<media parent="jeu" type="box-2D" region="asi" crc="5cd5e4c6" md5="2da0ab9aabf9117f0c6325a2766f4718" sha1="04ce24069280e5384818c82a7b1a23bc45bb5c90" size="246902" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=box-2D(asi)</media>
+		<media parent="jeu" type="box-2D" region="au" crc="a99bc263" md5="d0f1d6c10b3fab97869def6f993b9bc6" sha1="d298d724eb9501cfa1687c0eef2c39f9c474b0b6" size="311865" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=box-2D(au)</media>
+		<media parent="jeu" type="box-2D" region="br" crc="52ea7be1" md5="0dbf281ef99aee882b71d1bd9bd5af36" sha1="913a7a4ee50ca3a9d99319e3a6fc429e5a3e6058" size="538550" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=box-2D(br)</media>
+		<media parent="jeu" type="box-2D" region="eu" crc="9210fe48" md5="af61e1fc47bf4d996347fd3385b2428a" sha1="e2bdd1d76b8472aa5e516053fdd0928b857aa30c" size="584076" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=box-2D(eu)</media>
+		<media parent="jeu" type="box-2D" region="jp" crc="8ddff962" md5="51a80c511a7befddd3b2c6d5a5f561e4" sha1="e6c9e4cad7ad616df751c5d72fac1b8daa2514be" size="410038" format="png">https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;systemeid=1&amp;jeuid=3&amp;media=box-2D(jp)</media>		<media parent="region" type="pictoliste" crc="3e16ef2f" md5="477d7229d6acc6f9fe10410d8523f91a" sha1="99cb5eab43e90a3dd73b1034b140a8ead05c224f" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=57&amp;media=pictoliste</media>
+		<media parent="editeur" type="pictomonochrome" crc="51a9b16a" md5="a7ee9f40f4881d1a344ca1d4a63960ee" sha1="736a9d7ccd672679d3a6da9c7a7b6b031cb3b0b1" size="4620" format="png">https://neoclone.screenscraper.fr/api2/mediaCompagnie.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3&amp;media=logo-monochrome</media>
+		<media parent="editeur" type="pictocouleur" crc="ccbe59c6" md5="fd6f3e07588d80511c96dfd025aedd6d" sha1="7dc647854b63110fa232b675836913be8a64caea" size="73967" format="png">https://neoclone.screenscraper.fr/api2/mediaCompagnie.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3&amp;media=wheel</media>
+		<media parent="developpeur" type="pictomonochrome" crc="51a9b16a" md5="a7ee9f40f4881d1a344ca1d4a63960ee" sha1="736a9d7ccd672679d3a6da9c7a7b6b031cb3b0b1" size="4620" format="png">https://neoclone.screenscraper.fr/api2/mediaCompagnie.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3&amp;media=logo-monochrome</media>
+		<media parent="developpeur" type="pictocouleur" crc="ccbe59c6" md5="fd6f3e07588d80511c96dfd025aedd6d" sha1="7dc647854b63110fa232b675836913be8a64caea" size="73967" format="png">https://neoclone.screenscraper.fr/api2/mediaCompagnie.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3&amp;media=wheel</media>
+		<media parent="joueurs" type="pictoliste" crc="0abdc9bf" md5="05057bd8fcfe368b23628ba314e94df0" sha1="6d9b48053c720498ece35d0029621b7d25010d3b" size="449" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3304&amp;media=pictoliste</media>
+		<media parent="note" type="pictoliste" crc="912e565f" md5="e1848a91d9e085224b8ccf11b8b4bacc" sha1="34379c7b3106f9076d2b9388e291a53f1e2f42c1" size="1341" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3555&amp;media=pictoliste</media>
+		<media parent="classification" type="pictoliste" crc="73168804" md5="5ff2f3339b04bf6e898b96d2bba23d5b" sha1="524492838d519780518592560c7d26d96d2b7ceb" size="550" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3796&amp;media=pictoliste</media>
+		<media parent="classification" type="pictomonochrome" crc="c51618a3" md5="476209ddc567705a022f4b5518a9895a" sha1="dbb3291ef992c500a02193e7d8aa38994fe86560" size="4465" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3796&amp;media=logo-monochrome</media>
+		<media parent="classification" type="pictocouleur" crc="d076a18b" md5="c4fb570c824bca6ae83bd0e65f28e48e" sha1="12e9e3296714f62091f4c7ebd09cf5d02841cd07" size="22247" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3796&amp;media=wheel</media>
+		<media parent="classification" organisation="Tectoy" type="pictoliste" crc="5565da53" md5="b34f90ea15757bce08be906a17fde5ac" sha1="7209ff3b5242992d2cdd1c464da0e4c93eedcdae" size="528" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3345&amp;media=pictoliste</media>
+		<media parent="classification" organisation="CERO" type="pictoliste" crc="399f10e9" md5="a1622781ff399d0571142fb803e09c54" sha1="20eaec1b4d905832dbfaf3fff6643757d845a0f2" size="705" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3621&amp;media=pictoliste</media>
+		<media parent="classification" organisation="CERO" type="pictomonochrome" crc="ae2c8a77" md5="747f5e7d5d440a64f066ecc592f13899" sha1="19b3e8723f425c74e84833f057c8f4a9749151ed" size="16441" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3621&amp;media=logo-monochrome</media>
+		<media parent="classification" organisation="PEGI" type="pictoliste" crc="05df9e5c" md5="c013fb8489dda92b8b1035ab51241ddf" sha1="4f025371d91c39874184b041c4230843482da6d0" size="492" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3710&amp;media=pictoliste</media>
+		<media parent="classification" organisation="ESRB" type="pictoliste" crc="cafca3d7" md5="51bfa81c19838bc679411a7b6f4053e2" sha1="92253cf472ed8e71780c29ddeb6c6e260325ce1f" size="593" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3653&amp;media=pictoliste</media>
+		<media parent="classification" organisation="ESRB" type="pictomonochrome" crc="e4f09f59" md5="031f5b008fd851f56fea852bf9f95126" sha1="8160d583dde154dcbd717217182d2b310e756e92" size="10670" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=3653&amp;media=logo-monochrome</media>
+		<media id="7" parent="genre" subparent="Plateforme" type="pictoliste" crc="d8329f23" md5="ada4054a77e20edada97225e5c316116" sha1="cfadf96438bde8ae1a8c3c52c85dd6768ba9b4c8" size="855" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=7&amp;media=pictoliste</media>
+		<media id="7" parent="genre" subparent="Plateforme" type="pictomonochrome" crc="0f88a1ba" md5="e8c818f5f59d48642afea18e5c545c15" sha1="ef3857055eaae13785d2cab692edf9454b544be3" size="9142" format="png">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=7&amp;media=logo-monochrome</media>
+		<media id="7" parent="genre" subparent="Plateforme" type="pictomonochrome" crc="fa797dda" md5="73a61640b94904834fdbfc7e043150e0" sha1="3e5fe422339961df30bd70aa83e43671a1badce4" size="4755" format="svg">https://neoclone.screenscraper.fr/api2/mediaGroup.php?devid=xxx&amp;devpassword=yyy&amp;softname=zzz&amp;ssid=test&amp;sspassword=test&amp;groupid=7&amp;media=logo-monochrome-svg</media>
+	</medias>
+	<roms>
+		<rom id="716" romfilename="Sonic The Hedgehog 2 (World) (Rev A).zip" romsize="749666" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="E4E46E44" rommd5="DD6CDEDF6AB92BAD42752C99F91EA420" romsha1="72D0431690165361681C19BEDEFED384818B2C66" beta="0" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="12099" romfilename="Sonic The Hedgehog 2 (World) (Beta).zip" romsize="529205" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="B0AB77CD" rommd5="3A0F93E90224026E38DF4E1CED4E6623" romsha1="85BC6EE47716D60FFB4A130A20A2F47B311A0D25" beta="1" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="12100" romfilename="Sonic The Hedgehog 2 (World).zip" romsize="749652" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="50ABC90A" rommd5="C83A15A3CE0ABF7C7A44AC26839CDA6D" romsha1="736D6B9C88C771C9BBB741244E74935BA13BC819" beta="0" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="86502" romfilename="Sonic the Hedgehog 2 (World) (Rev A).7z" romsize="694034" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="F00C7390" rommd5="E2B6020B2F41EB568EE8EDF93FEF08E8" romsha1="" beta="0" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="93915" romfilename="Sonic the Hedgehog 2 Rev 0 (1992)(Sega).zip" romsize="750185" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="039B0AC9" rommd5="D5CC7934E6A305738267803AD6BCFA57" romsha1="BCC0617D986013A444882D9E587AEA274946C885" beta="0" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="93916" romfilename="Sonic the Hedgehog 2 Rev 1 (1992)(Sega)(beta).zip" romsize="640570" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="D36F5A95" rommd5="F21F72E7B0C94E733914C514A031C48E" romsha1="4AD92009AF4C460A4F984F68A9EBB132E024AD63" beta="1" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="93917" romfilename="Sonic the Hedgehog 2 Rev 1 (1992)(Sega)(beta)[b].zip" romsize="640572" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="B6078005" rommd5="944DC05F604A4F817514E4B4AE12E986" romsha1="11670AF6420EE5B975B8F94E7908D02ECFB6372C" beta="1" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="93918" romfilename="Sonic the Hedgehog 2 Rev 1 (1992)(Sega)(beta)[h2].zip" romsize="640591" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="8FDD5725" rommd5="B0C443862E7A1CFCC2B65FE00BEBA68F" romsha1="3FEFDA9AF823AC6DE0B60CF06A8C27728F9E5171" beta="1" demo="0" proto="0" trad="0" hack="1" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="93919" romfilename="Sonic the Hedgehog 2 Rev 1 (1992)(Sega)(beta)[h3].zip" romsize="640578" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="EAED6C49" rommd5="6F14BE2763B886377B354A85F90C2853" romsha1="FB3F6893BD31F6BBA39FED13915D843671207860" beta="1" demo="0" proto="0" trad="0" hack="1" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="93920" romfilename="Sonic the Hedgehog 2 Rev 1 (1992)(Sega)(beta)[h].zip" romsize="640580" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="C6D27D2E" rommd5="4E252454761CC815EF3DF55F3471BA19" romsha1="8795AB4EFFA23BB180F800D785A939926FDB451D" beta="1" demo="0" proto="0" trad="0" hack="1" unl="0" alt="0" best="0" netplay="0"/>
+		<rom id="93921" romfilename="Sonic the Hedgehog 2 Rev 1 (1992)(Sega).zip" romsize="750183" romnumsupport="1" romtotalsupport="1" romcloneof="0" romcrc="7BCD26DB" rommd5="C7B75B6D5CFB0B7F028B178F93104DF6" romsha1="193561C1E9C3B525BC7124D828287F034FC0B8D4" beta="0" demo="0" proto="0" trad="0" hack="0" unl="0" alt="0" best="0" netplay="0"/>
+	</roms>
+	<rom id="12100">
+		<romnumsupport>1</romnumsupport>
+		<romtotalsupport>1</romtotalsupport>
+		<romfilename>Sonic The Hedgehog 2 (World).zip</romfilename>
+		<romregions>wor</romregions>
+		<romtype>rom</romtype>
+		<romsupporttype>cartouche</romsupporttype>
+		<romsize>749652</romsize>
+		<romcrc>50ABC90A</romcrc>
+		<rommd5>C83A15A3CE0ABF7C7A44AC26839CDA6D</rommd5>
+		<romsha1>736D6B9C88C771C9BBB741244E74935BA13BC819</romsha1>
+		<romcloneof>0</romcloneof>
+		<beta>0</beta>
+		<demo>0</demo>
+		<proto>0</proto>
+		<trad>0</trad>
+		<hack>0</hack>
+		<unl>0</unl>
+		<alt>0</alt>
+		<best>0</best>
+		<netplay>0</netplay>
+		<regions>
+			<regions_id>
+					<region_id>57</region_id>
+			</regions_id>
+			<regions_en>
+				<region_en>World</region_en>
+			</regions_en>
+			<regions_fr>
+				<region_fr>Monde</region_fr>
+			</regions_fr>
+			<regions_de>
+				<region_de>World</region_de>
+			</regions_de>
+			<regions_es>
+				<region_es>Mundo</region_es>
+			</regions_es>
+				<regions_pt>
+				<region_pt>Mundo</region_pt>
+			</regions_pt>
+		</regions>
+	</rom>
+	</jeu><script/>
+</Data>

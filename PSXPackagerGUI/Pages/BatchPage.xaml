@@ -31,6 +31,7 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -91,6 +92,15 @@
             </Grid>
 
             <Grid Grid.Row="4" ColumnSpan="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition MinWidth="200"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Margin="2,2,2,2">Options:</Label>
+                <CheckBox Grid.Column="1" Margin="2,8,2,2" IsChecked="{Binding UseScreenScraper}" IsEnabled="{Binding ConvertImageToPbp}" Foreground="Green" FontWeight="Bold">Auto-download artwork from ScreenScraper</CheckBox>
+            </Grid>
+
+            <Grid Grid.Row="5" ColumnSpan="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition MinWidth="200"/>

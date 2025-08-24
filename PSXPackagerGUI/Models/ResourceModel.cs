@@ -10,10 +10,12 @@ namespace PSXPackagerGUI.Models
         private bool _isRemoveEnabled;
         private bool _isSaveAsEnabled;
         private bool _isLoadEnabled;
+        private bool _isEmpty;
 
         public ResourceModel()
         {
             IsLoadEnabled = true;
+            IsEmpty = true;
         }
 
         public void Reset()
@@ -22,6 +24,7 @@ namespace PSXPackagerGUI.Models
             IsLoadEnabled = true;
             IsSaveAsEnabled = false;
             IsRemoveEnabled = false;
+            IsEmpty = true;
             SourceUrl = null;
         }
 
@@ -55,6 +58,12 @@ namespace PSXPackagerGUI.Models
         {
             get => _isRemoveEnabled;
             set => SetProperty(ref _isRemoveEnabled, value);
+        }
+
+        public bool IsEmpty
+        {
+            get => _isEmpty;
+            set => SetProperty(ref _isEmpty, value);
         }
 
         public string SourceUrl { get; set; }
